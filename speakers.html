@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keynote Speakers | IEEE InnovateX 2026</title>
+  <meta name="description" content="Distinguished keynote speakers at IEEE InnovateX 2026, MITS Gwalior.">
+  <link rel="icon" type="image/png" href="ieee-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage-view">
+
+  <!-- Cyber Portal Animated HUD Background -->
+  <div class="cyber-portal-backdrop" aria-hidden="true">
+    <div class="portal-reactor-core">
+      <img src="cyber-portal-bg.jpg" alt="" class="portal-hud-img" id="portal-hud-bg">
+    </div>
+  </div>
+  <div class="portal-transition-overlay" id="portal-transition-overlay"></div>
+
+  <canvas id="hero-particle-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logos-group" title="IEEE InnovateX 2026">
+        <div class="brand-logos-row">
+          <div class="logo-badge"><img src="ieee-logo.png" alt="IEEE"></div>
+          <div class="logo-badge"><img src="ias-logo.png" alt="IAS"></div>
+          <div class="logo-badge"><img src="ras-logo.png" alt="RAS"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">InnovateX <span class="badge-year">2026</span></span>
+          <span class="brand-subtitle">SPEAKERS PORTAL</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="speakers.html" class="nav-link active">Speakers</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="tracks.html" class="nav-link">Tracks</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Sound" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="register.html" class="btn btn-primary btn-sm btn-pulse" data-cursor-text="JOIN">
+          <i class="fa-solid fa-bolt"></i> Register Now
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <a href="index.html" class="subpage-back-link"><i class="fa-solid fa-arrow-left"></i> Return to Main Terminal</a>
+      <span class="section-tag"><i class="fa-solid fa-microphone-lines"></i> Keynote Showcase</span>
+      <h1 class="section-title">Distinguished Global Visionaries</h1>
+      <p class="section-desc">Direct interactive sessions, live masterclasses, and Q&A forums led by IEEE industry specialists.</p>
+    </div>
+  </section>
+
+  <!-- Speakers Grid Deep Dive -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      <div class="speakers-grid">
+        
+        <!-- Speaker 1 -->
+        <article class="speaker-card ras-card tilt-card" data-cursor-text="EXPLORE">
+          <div class="speaker-card-header">
+            <img src="speaker-1.jpg" alt="Dr. Priya Sharma portrait" loading="lazy">
+            <span class="speaker-society-badge badge-ras"><i class="fa-solid fa-robot"></i> IEEE RAS Keynote</span>
+          </div>
+          <div class="speaker-card-body">
+            <h2 class="speaker-name">Dr. Priya Sharma</h2>
+            <p class="speaker-role">Principal AI & Robotics Research Scientist</p>
+            <p class="speaker-org">Autonomous Systems Lab • Senior Member, IEEE</p>
+
+            <div class="speaker-talk-box">
+              <div class="talk-label"><i class="fa-solid fa-satellite-dish"></i> Keynote Masterclass</div>
+              <h3 class="talk-title">Next-Gen Autonomous Navigation: From ROS2 Simulation to Real-World Edge Deployment</h3>
+            </div>
+
+            <p class="speaker-bio">
+              With over 12 years of research spanning NASA collaborative challenges and autonomous mobile robotics, Dr. Priya leads breakthroughs in real-time visual SLAM, semantic mapping, and sub-millisecond edge neural controllers.
+            </p>
+
+            <div class="speaker-tags">
+              <span class="tag-pill">ROS 2 Humble</span>
+              <span class="tag-pill">LiDAR SLAM</span>
+              <span class="tag-pill">Embedded Neural Nets</span>
+              <span class="tag-pill">Edge AI Autonomy</span>
+            </div>
+
+            <div class="speaker-card-footer">
+              <div class="speaker-socials">
+                <a href="#speakers" class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#speakers" class="social-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#speakers" class="social-icon-btn" title="Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+              </div>
+              <button class="btn btn-secondary btn-sm btn-view-abstract" data-speaker="priya" data-cursor-text="ABSTRACT">
+                <i class="fa-regular fa-file-lines"></i> View Full Abstract
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Speaker 2 -->
+        <article class="speaker-card ias-card tilt-card" data-cursor-text="EXPLORE">
+          <div class="speaker-card-header">
+            <img src="speaker-2.jpg" alt="Er. Vikramaditya Sen portrait" loading="lazy">
+            <span class="speaker-society-badge badge-ias"><i class="fa-solid fa-industry"></i> IEEE IAS Keynote</span>
+          </div>
+          <div class="speaker-card-body">
+            <h2 class="speaker-name">Er. Vikramaditya Sen</h2>
+            <p class="speaker-role">Lead Industrial Automation Architect & IoT Director</p>
+            <p class="speaker-org">Cyber-Physical Energy Systems • IEEE IAS Specialist</p>
+
+            <div class="speaker-talk-box">
+              <div class="talk-label"><i class="fa-solid fa-network-wired"></i> Industrial Keynote</div>
+              <h3 class="talk-title">Industrial IoT & Cyber-Physical Systems: Automating High-Precision Manufacturing</h3>
+            </div>
+
+            <p class="speaker-bio">
+              A veteran in Industry 4.0 transformation, Er. Vikramaditya has spearheaded mission-critical SCADA, OPC-UA, and distributed PLC automation pipelines across Fortune 500 manufacturing facilities and smart grid networks worldwide.
+            </p>
+
+            <div class="speaker-tags">
+              <span class="tag-pill">Industrial IoT</span>
+              <span class="tag-pill">OPC-UA Protocol</span>
+              <span class="tag-pill">PLC & SCADA</span>
+              <span class="tag-pill">Smart Energy Grids</span>
+            </div>
+
+            <div class="speaker-card-footer">
+              <div class="speaker-socials">
+                <a href="#speakers" class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#speakers" class="social-icon-btn" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#speakers" class="social-icon-btn" title="IEEE Xplore"><i class="fa-solid fa-book-bookmark"></i></a>
+              </div>
+              <button class="btn btn-secondary btn-sm btn-view-abstract" data-speaker="vikram" data-cursor-text="ABSTRACT">
+                <i class="fa-regular fa-file-lines"></i> View Full Abstract
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract Modal -->
+  <div id="speaker-abstract-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button id="close-abstract-modal" class="modal-close-btn" aria-label="Close Abstract Modal">&times;</button>
+      <span class="pill-badge" style="margin-bottom: 0.85rem;">Keynote Session Abstract</span>
+      <h3 id="abstract-modal-title" style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">Session Title</h3>
+      <p id="abstract-modal-speaker" style="font-size: 0.9rem; font-weight: 700; color: var(--cyan-electric); margin-bottom: 1.25rem;">Speaker Name</p>
+      <div id="abstract-modal-body" style="font-size: 0.94rem; color: var(--text-secondary); line-height: 1.7; max-height: 320px; overflow-y: auto;">Abstract Content</div>
+    </div>
+  </div>
+
+  <!-- Cyber Easter Egg Button -->
+  <button id="matrix-toggle" class="cyber-easter-egg-btn" title="Toggle Matrix Terminal Mode" data-cursor-text="OVERRIDE">
+    <i class="fa-solid fa-terminal"></i> <span>OVERRIDE</span>
+  </button>
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-banner-wrapper">
+        <div class="footer-banner-card">
+          <img src="footer-image.jpg" alt="MITS Gwalior Official Institutional Footer Banner" class="footer-banner-img">
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 IEEE IAS & RAS Student Branch Chapters, MITS Gwalior. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home Terminal</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Tracks | IEEE InnovateX 2026</title>
+  <meta name="description" content="Technical tracks, hardware builds, and challenges at IEEE InnovateX 2026, MITS Gwalior.">
+  <link rel="icon" type="image/png" href="ieee-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage-view">
+
+  <!-- Cyber Portal Animated HUD Background -->
+  <div class="cyber-portal-backdrop" aria-hidden="true">
+    <div class="portal-reactor-core">
+      <img src="cyber-portal-bg.jpg" alt="" class="portal-hud-img" id="portal-hud-bg">
+    </div>
+  </div>
+  <div class="portal-transition-overlay" id="portal-transition-overlay"></div>
+
+  <canvas id="hero-particle-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logos-group" title="IEEE InnovateX 2026">
+        <div class="brand-logos-row">
+          <div class="logo-badge"><img src="ieee-logo.png" alt="IEEE"></div>
+          <div class="logo-badge"><img src="ias-logo.png" alt="IAS"></div>
+          <div class="logo-badge"><img src="ras-logo.png" alt="RAS"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">InnovateX <span class="badge-year">2026</span></span>
+          <span class="brand-subtitle">TRACKS & LABS</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="tracks.html" class="nav-link active">Tracks</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Sound" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="register.html" class="btn btn-primary btn-sm btn-pulse" data-cursor-text="JOIN">
+          <i class="fa-solid fa-bolt"></i> Register Now
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <a href="index.html" class="subpage-back-link"><i class="fa-solid fa-arrow-left"></i> Return to Main Terminal</a>
+      <span class="section-tag"><i class="fa-solid fa-microchip"></i> Specialization Domains</span>
+      <h1 class="section-title">Pioneering Hardware & Autonomy Tracks</h1>
+      <p class="section-desc">Hands-on lab equipment, ROS 2 pipelines, and industrial IoT SCADA telemetry.</p>
+    </div>
+  </section>
+
+  <!-- Detailed Tracks Grid -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <div class="features-grid">
+        
+        <div class="feature-card tilt-card" style="border-top: 4px solid var(--purple-electric);" data-cursor-text="ROBOTICS">
+          <div class="feature-icon-box" style="background: rgba(168, 85, 247, 0.15); color: var(--purple-vibrant); border-color: var(--border-purple);">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h2 class="feature-title">IEEE RAS Track: Robotics & Autonomous Systems</h2>
+          <p class="feature-text">
+            Dive into ROS 2 Humble microarchitecture, real-time Simultaneous Localization and Mapping (SLAM), Gazebo dynamic physics simulation, lidar telemetry filtering, and drone kinematics.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+            <div><i class="fa-solid fa-check" style="color: var(--cyan-electric);"></i> ROS 2 Node Graph Programming</div>
+            <div><i class="fa-solid fa-check" style="color: var(--cyan-electric);"></i> 2D/3D LiDAR Visual SLAM Mapping</div>
+            <div><i class="fa-solid fa-check" style="color: var(--cyan-electric);"></i> Embedded Edge Inference on Jetson Nano</div>
+          </div>
+        </div>
+
+        <div class="feature-card tilt-card" style="border-top: 4px solid var(--green-ias);" data-cursor-text="IOT & PLC">
+          <div class="feature-icon-box" style="background: rgba(16, 185, 129, 0.15); color: var(--green-ias); border-color: rgba(16, 185, 129, 0.3);">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h2 class="feature-title">IEEE IAS Track: Industrial IoT & Cyber-Physical Systems</h2>
+          <p class="feature-text">
+            Master the foundation of Industry 4.0 automation. Connect industrial PLC controllers, configure Modbus & OPC-UA protocols, and stream real-time sensor telemetries to Grafana cloud dashboards.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--green-ias);">
+            <div><i class="fa-solid fa-check" style="color: var(--green-ias);"></i> Industrial PLC Ladder Logic & SCADA</div>
+            <div><i class="fa-solid fa-check" style="color: var(--green-ias);"></i> Encrypted MQTT Telemetry over TLS</div>
+            <div><i class="fa-solid fa-check" style="color: var(--green-ias);"></i> Predictive Maintenance & Sensor Nodes</div>
+          </div>
+        </div>
+
+        <div class="feature-card tilt-card" style="border-top: 4px solid var(--amber-accent);" data-cursor-text="EXPO & PRIZES">
+          <div class="feature-icon-box" style="background: rgba(245, 158, 11, 0.15); color: var(--amber-accent); border-color: rgba(245, 158, 11, 0.3);">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h2 class="feature-title">Hack-a-Bot Challenge & Grand Project Expo</h2>
+          <p class="feature-text">
+            Competitive hackathon where student teams design, assemble, and pitch functional hardware prototypes in front of a jury of IEEE senior researchers and visiting industrial engineering managers.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--amber-accent);">
+            <div><i class="fa-solid fa-check" style="color: var(--amber-accent);"></i> ₹50,000+ Total Cash Prizes & Grants</div>
+            <div><i class="fa-solid fa-check" style="color: var(--amber-accent);"></i> Hardware Component Kits Provided</div>
+            <div><i class="fa-solid fa-check" style="color: var(--amber-accent);"></i> IEEE Chapter Executive Recruitment</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cyber Easter Egg Button -->
+  <button id="matrix-toggle" class="cyber-easter-egg-btn" title="Toggle Matrix Terminal Mode" data-cursor-text="OVERRIDE">
+    <i class="fa-solid fa-terminal"></i> <span>OVERRIDE</span>
+  </button>
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-banner-wrapper">
+        <div class="footer-banner-card">
+          <img src="footer-image.jpg" alt="MITS Gwalior Official Institutional Footer Banner" class="footer-banner-img">
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 IEEE IAS & RAS Student Branch Chapters, MITS Gwalior. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home Terminal</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

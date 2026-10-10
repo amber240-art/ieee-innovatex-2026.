@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Summit & Society Chapters | IEEE InnovateX 2026</title>
+  <meta name="description" content="About IEEE InnovateX 2026, IEEE IAS & RAS Student Branch Chapters at MITS Gwalior.">
+  <link rel="icon" type="image/png" href="ieee-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage-view">
+
+  <!-- Cyber Portal Animated HUD Background -->
+  <div class="cyber-portal-backdrop" aria-hidden="true">
+    <div class="portal-reactor-core">
+      <img src="cyber-portal-bg.jpg" alt="" class="portal-hud-img" id="portal-hud-bg">
+    </div>
+  </div>
+  <div class="portal-transition-overlay" id="portal-transition-overlay"></div>
+
+  <canvas id="hero-particle-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logos-group" title="IEEE InnovateX 2026">
+        <div class="brand-logos-row">
+          <div class="logo-badge"><img src="ieee-logo.png" alt="IEEE"></div>
+          <div class="logo-badge"><img src="ias-logo.png" alt="IAS"></div>
+          <div class="logo-badge"><img src="ras-logo.png" alt="RAS"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">InnovateX <span class="badge-year">2026</span></span>
+          <span class="brand-subtitle">CHAPTER BACKGROUND</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="tracks.html" class="nav-link">Tracks</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Sound" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="register.html" class="btn btn-primary btn-sm btn-pulse" data-cursor-text="JOIN">
+          <i class="fa-solid fa-bolt"></i> Register Now
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <a href="index.html" class="subpage-back-link"><i class="fa-solid fa-arrow-left"></i> Return to Main Terminal</a>
+      <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Institutional Legacy</span>
+      <h1 class="section-title">Pioneering Engineering at MITS Gwalior</h1>
+      <p class="section-desc">Madhav Institute of Technology & Science (Estd. 1957) • Joint IEEE IAS & RAS Student Chapter Initiative.</p>
+    </div>
+  </section>
+
+  <!-- Content Box -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <div class="subpage-content-box">
+        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+          <h2 class="section-title">Bridging Theory with Industrial Reality</h2>
+          <p class="section-desc">
+            The IEEE Industry Applications Society (IAS) and IEEE Robotics & Automation Society (RAS) Student Branch Chapters at Madhav Institute of Technology & Science (MITS Gwalior) serve as a premier launchpad for engineering students.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card tilt-card" data-cursor-text="CHALLENGE">
+            <div class="feature-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3 class="feature-title">The Challenge Pillar</h3>
+            <p class="feature-text">
+              Encouraging students to interrogate difficult research problems in automation, robotic vision, power electronics, and edge computing through IEEE student paper challenges.
+            </p>
+          </div>
+
+          <div class="feature-card tilt-card" data-cursor-text="CREATE">
+            <div class="feature-icon-box" style="background: rgba(16, 185, 129, 0.15); color: var(--green-ias); border-color: rgba(16, 185, 129, 0.3);"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3 class="feature-title">The Create Pillar</h3>
+            <p class="feature-text">
+              Moving beyond simulations into tangible cyber-physical systems with microcontrollers, ROS 2 nodes, and industrial protocols in state-of-the-art campus labs.
+            </p>
+          </div>
+
+          <div class="feature-card tilt-card" data-cursor-text="CONTRIBUTE">
+            <div class="feature-icon-box" style="background: rgba(168, 85, 247, 0.15); color: var(--purple-vibrant); border-color: var(--border-purple);"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3 class="feature-title">The Contribute Pillar</h3>
+            <p class="feature-text">
+              Providing leadership roles, chapter officer positions, conference travel grants, and lifelong alumni mentorship across high-tech industries.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; text-align: center;">
+          <a href="register.html" class="btn btn-primary btn-lg btn-pulse" data-cursor-text="REGISTER">
+            <i class="fa-solid fa-bolt"></i> Join IEEE InnovateX 2026 Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cyber Easter Egg Button -->
+  <button id="matrix-toggle" class="cyber-easter-egg-btn" title="Toggle Matrix Terminal Mode" data-cursor-text="OVERRIDE">
+    <i class="fa-solid fa-terminal"></i> <span>OVERRIDE</span>
+  </button>
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-banner-wrapper">
+        <div class="footer-banner-card">
+          <img src="footer-image.jpg" alt="MITS Gwalior Official Institutional Footer Banner" class="footer-banner-img">
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 IEEE IAS & RAS Student Branch Chapters, MITS Gwalior. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home Terminal</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

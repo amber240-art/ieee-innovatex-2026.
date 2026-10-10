@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline & Schedule | IEEE InnovateX 2026</title>
+  <meta name="description" content="Official schedule and agenda of IEEE InnovateX 2026 at MITS Gwalior.">
+  <link rel="icon" type="image/png" href="ieee-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage-view">
+
+  <!-- Cyber Portal Animated HUD Background -->
+  <div class="cyber-portal-backdrop" aria-hidden="true">
+    <div class="portal-reactor-core">
+      <img src="cyber-portal-bg.jpg" alt="" class="portal-hud-img" id="portal-hud-bg">
+    </div>
+  </div>
+  <div class="portal-transition-overlay" id="portal-transition-overlay"></div>
+
+  <canvas id="hero-particle-canvas"></canvas>
+  <canvas id="matrix-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logos-group" title="IEEE InnovateX 2026">
+        <div class="brand-logos-row">
+          <div class="logo-badge"><img src="ieee-logo.png" alt="IEEE"></div>
+          <div class="logo-badge"><img src="ias-logo.png" alt="IAS"></div>
+          <div class="logo-badge"><img src="ras-logo.png" alt="RAS"></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">InnovateX <span class="badge-year">2026</span></span>
+          <span class="brand-subtitle">SUMMIT TIMELINE</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+          <li><a href="schedule.html" class="nav-link active">Schedule</a></li>
+          <li><a href="tracks.html" class="nav-link">Tracks</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Sound" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="register.html" class="btn btn-primary btn-sm btn-pulse" data-cursor-text="JOIN">
+          <i class="fa-solid fa-bolt"></i> Register Now
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <a href="index.html" class="subpage-back-link"><i class="fa-solid fa-arrow-left"></i> Return to Main Terminal</a>
+      <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> Master Agenda</span>
+      <h1 class="section-title">Two Days of Intensive Engineering</h1>
+      <p class="section-desc">Keynotes, hands-on hardware builds, Hack-a-Bot pitching, and networking ceremonies.</p>
+    </div>
+  </section>
+
+  <!-- Schedule Filter Tabs & Detailed Timeline -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="schedule-filter-tabs">
+        <button class="filter-tab active" data-filter="all" data-cursor-text="FILTER">All Sessions (4)</button>
+        <button class="filter-tab" data-filter="ras" data-cursor-text="FILTER">IEEE RAS Track</button>
+        <button class="filter-tab" data-filter="ias" data-cursor-text="FILTER">IEEE IAS Track</button>
+        <button class="filter-tab" data-filter="hack" data-cursor-text="FILTER">Hackathon & Awards</button>
+      </div>
+
+      <div class="schedule-timeline">
+        
+        <!-- Day 1 Morning -->
+        <article class="schedule-card tilt-card" data-track="ras" data-cursor-text="SESSION">
+          <div class="schedule-time-col">
+            <span class="schedule-day-badge">Day 1 • Oct 24, 2026</span>
+            <span class="schedule-time">09:30 AM</span>
+            <span class="schedule-duration">120 Minutes</span>
+          </div>
+          <div class="schedule-info-col">
+            <div class="schedule-track-tags">
+              <span class="track-tag ras">IEEE RAS Track</span>
+              <span class="track-tag" style="background: rgba(0, 240, 255, 0.15); color: var(--cyan-electric);">Keynote</span>
+            </div>
+            <h3 class="schedule-item-title">Inaugural Ceremony & Keynote: Autonomous Mobile Robotics & Industry 4.0</h3>
+            <p class="schedule-desc">
+              Grand opening ceremony followed by Dr. Priya Sharma's keynote uncovering state-of-the-art ROS 2 navigation stacks, sim-to-real robotic mapping, and embedded edge autonomy.
+            </p>
+            <div class="schedule-speaker-row">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span>Keynote Speaker: <strong>Dr. Priya Sharma</strong> (Autonomous Systems Lab)</span>
+            </div>
+          </div>
+          <div class="schedule-venue-col">
+            <div class="venue-tag"><i class="fa-solid fa-map-pin"></i> Main Auditorium</div>
+          </div>
+        </article>
+
+        <!-- Day 1 Afternoon -->
+        <article class="schedule-card tilt-card" data-track="ias" data-cursor-text="SESSION">
+          <div class="schedule-time-col">
+            <span class="schedule-day-badge">Day 1 • Oct 24, 2026</span>
+            <span class="schedule-time">01:30 PM</span>
+            <span class="schedule-duration">180 Minutes</span>
+          </div>
+          <div class="schedule-info-col">
+            <div class="schedule-track-tags">
+              <span class="track-tag ias">IEEE IAS Track</span>
+              <span class="track-tag" style="background: rgba(16, 185, 129, 0.15); color: var(--green-ias);">Hands-on Lab</span>
+            </div>
+            <h3 class="schedule-item-title">Hands-on Workshop: Industrial IoT Architectures, Edge AI & PLC Interfacing</h3>
+            <p class="schedule-desc">
+              Participants build telemetry pipelines using industrial sensor nodes, ESP32/PLC kits, and publish real-time SCADA dashboard telemetry over encrypted MQTT.
+            </p>
+            <div class="schedule-speaker-row">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Workshop Mentor: <strong>Er. Vikramaditya Sen</strong> & IEEE IAS Lab Team</span>
+            </div>
+          </div>
+          <div class="schedule-venue-col">
+            <div class="venue-tag"><i class="fa-solid fa-laptop-code"></i> Advanced Computing Lab</div>
+          </div>
+        </article>
+
+        <!-- Day 2 Morning -->
+        <article class="schedule-card tilt-card" data-track="hack" data-cursor-text="SESSION">
+          <div class="schedule-time-col">
+            <span class="schedule-day-badge">Day 2 • Oct 25, 2026</span>
+            <span class="schedule-time">10:00 AM</span>
+            <span class="schedule-duration">210 Minutes</span>
+          </div>
+          <div class="schedule-info-col">
+            <div class="schedule-track-tags">
+              <span class="track-tag joint">Joint IAS × RAS Track</span>
+              <span class="track-tag" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">Live Competition</span>
+            </div>
+            <h3 class="schedule-item-title">InnovateX Hack-a-Bot & Grand Project Expo: Hardware + Software Pitch</h3>
+            <p class="schedule-desc">
+              Student teams demonstrate working robotics, automation, and IoT prototypes in front of an expert panel of professors and industry evaluators. Open audience exhibition and live judging.
+            </p>
+            <div class="schedule-speaker-row">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Jury Panel: <strong>Society Mentors & Visiting Academicians</strong></span>
+            </div>
+          </div>
+          <div class="schedule-venue-col">
+            <div class="venue-tag"><i class="fa-solid fa-building-columns"></i> Colloquium Hall</div>
+          </div>
+        </article>
+
+        <!-- Day 2 Afternoon -->
+        <article class="schedule-card tilt-card" data-track="hack" data-cursor-text="SESSION">
+          <div class="schedule-time-col">
+            <span class="schedule-day-badge">Day 2 • Oct 25, 2026</span>
+            <span class="schedule-time">03:30 PM</span>
+            <span class="schedule-duration">120 Minutes</span>
+          </div>
+          <div class="schedule-info-col">
+            <div class="schedule-track-tags">
+              <span class="track-tag" style="background: rgba(168, 85, 247, 0.15); color: var(--purple-vibrant);">Valedictory</span>
+              <span class="track-tag" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">Awards & Mixer</span>
+            </div>
+            <h3 class="schedule-item-title">Valedictory Ceremony, Awards Distribution & Chapter Networking Mixer</h3>
+            <p class="schedule-desc">
+              Announcement of Hack-a-Bot cash prize winners, distribution of official IEEE IAS & RAS Certificates of Achievement, high tea, and recruitment interaction for newly aspiring society leads.
+            </p>
+            <div class="schedule-speaker-row">
+              <i class="fa-solid fa-award"></i>
+              <span>Presided by: <strong>Branch Counselor & Faculty Advisors</strong></span>
+            </div>
+          </div>
+          <div class="schedule-venue-col">
+            <div class="venue-tag"><i class="fa-solid fa-map-pin"></i> Main Auditorium</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cyber Easter Egg Button -->
+  <button id="matrix-toggle" class="cyber-easter-egg-btn" title="Toggle Matrix Terminal Mode" data-cursor-text="OVERRIDE">
+    <i class="fa-solid fa-terminal"></i> <span>OVERRIDE</span>
+  </button>
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-banner-wrapper">
+        <div class="footer-banner-card">
+          <img src="footer-image.jpg" alt="MITS Gwalior Official Institutional Footer Banner" class="footer-banner-img">
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 IEEE IAS & RAS Student Branch Chapters, MITS Gwalior. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home Terminal</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
